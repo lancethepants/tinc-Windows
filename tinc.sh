@@ -52,9 +52,9 @@ make install
 ########### #################################################################
 
 mkdir $SRC/openssl && cd $SRC/openssl
-$WGET https://www.openssl.org/source/openssl-1.0.2d.tar.gz
-tar zxvf openssl-1.0.2d.tar.gz
-cd openssl-1.0.2d
+$WGET https://www.openssl.org/source/openssl-1.0.2f.tar.gz
+tar zxvf openssl-1.0.2f.tar.gz
+cd openssl-1.0.2f
 
 CROSS_COMPILE="x86_64-w64-mingw32-" \
 ./Configure mingw64 \

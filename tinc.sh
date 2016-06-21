@@ -52,9 +52,9 @@ make install
 ########### #################################################################
 
 mkdir $SRC/openssl && cd $SRC/openssl
-$WGET https://www.openssl.org/source/openssl-1.0.2g.tar.gz
-tar zxvf openssl-1.0.2g.tar.gz
-cd openssl-1.0.2g
+$WGET https://www.openssl.org/source/openssl-1.0.2h.tar.gz
+tar zxvf openssl-1.0.2h.tar.gz
+cd openssl-1.0.2h
 
 CROSS_COMPILE="x86_64-w64-mingw32-" \
 ./Configure mingw64 \
@@ -89,9 +89,9 @@ ln -s libncursesw.a $DEST/lib/libcurses.a
 ######## ####################################################################
 
 mkdir $SRC/tinc1.1 && cd $SRC/tinc1.1
-$WGET http://www.tinc-vpn.org/packages/tinc-1.1pre12.tar.gz
-tar zxvf tinc-1.1pre12.tar.gz
-cd tinc-1.1pre12
+$WGET http://www.tinc-vpn.org/packages/tinc-1.1pre14.tar.gz
+tar zxvf tinc-1.1pre14.tar.gz
+cd tinc-1.1pre14
 
 LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \

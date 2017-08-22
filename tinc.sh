@@ -74,6 +74,7 @@ $WGET http://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.0.tar.gz
 tar zxvf ncurses-6.0.tar.gz
 cd ncurses-6.0
 
+CPPFLAGS="-P" \
 $CONFIGURE \
 --enable-widec \
 --enable-overwrite \

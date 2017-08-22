@@ -21,9 +21,9 @@ mkdir -p $SRC
 ######## ####################################################################
 
 mkdir $SRC/zlib && cd $SRC/zlib
-$WGET http://zlib.net/zlib-1.2.8.tar.gz
-tar zxvf zlib-1.2.8.tar.gz
-cd zlib-1.2.8
+$WGET https://zlib.net/zlib-1.2.11.tar.gz
+tar zxvf zlib-1.2.11.tar.gz
+cd zlib-1.2.11
 
 CROSS_PREFIX=x86_64-w64-mingw32- \
 ./configure \
@@ -38,9 +38,9 @@ make install
 ####### #####################################################################
 
 mkdir $SRC/lzo2 && cd $SRC/lzo2
-$WGET http://www.oberhumer.com/opensource/lzo/download/lzo-2.09.tar.gz
-tar zxvf lzo-2.09.tar.gz
-cd lzo-2.09
+$WGET http://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+tar zxvf lzo-2.10.tar.gz
+cd lzo-2.10
 
 $CONFIGURE
 
@@ -52,9 +52,9 @@ make install
 ########### #################################################################
 
 mkdir $SRC/openssl && cd $SRC/openssl
-$WGET https://www.openssl.org/source/openssl-1.0.2j.tar.gz
-tar zxvf openssl-1.0.2j.tar.gz
-cd openssl-1.0.2j
+$WGET https://www.openssl.org/source/openssl-1.0.2l.tar.gz
+tar zxvf openssl-1.0.2l.tar.gz
+cd openssl-1.0.2l
 
 CROSS_COMPILE="x86_64-w64-mingw32-" \
 ./Configure mingw64 \

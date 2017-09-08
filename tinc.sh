@@ -90,9 +90,9 @@ ln -s libncursesw.a $DEST/lib/libcurses.a
 ######## ####################################################################
 
 mkdir $SRC/tinc1.1 && cd $SRC/tinc1.1
-$WGET http://www.tinc-vpn.org/packages/tinc-1.1pre14.tar.gz
-tar zxvf tinc-1.1pre14.tar.gz
-cd tinc-1.1pre14
+$WGET https://www.tinc-vpn.org/packages/tinc-1.1pre15.tar.gz
+tar zxvf tinc-1.1pre15.tar.gz
+cd tinc-1.1pre15
 
 LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \

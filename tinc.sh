@@ -52,9 +52,9 @@ make install
 ########### #################################################################
 
 mkdir $SRC/openssl && cd $SRC/openssl
-$WGET https://www.openssl.org/source/openssl-1.0.2l.tar.gz
-tar zxvf openssl-1.0.2l.tar.gz
-cd openssl-1.0.2l
+$WGET https://www.openssl.org/source/openssl-1.0.2o.tar.gz
+tar zxvf openssl-1.0.2o.tar.gz
+cd openssl-1.0.2o
 
 CROSS_COMPILE="x86_64-w64-mingw32-" \
 ./Configure mingw64 \
@@ -70,9 +70,9 @@ make install
 ########### #################################################################
 
 mkdir $SRC/ncurses && cd $SRC/ncurses
-$WGET http://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.0.tar.gz
-tar zxvf ncurses-6.0.tar.gz
-cd ncurses-6.0
+$WGET http://ftp.gnu.org/gnu/ncurses/ncurses-6.1.tar.gz
+tar zxvf ncurses-6.1.tar.gz
+cd ncurses-6.1
 
 CPPFLAGS="-P" \
 $CONFIGURE \

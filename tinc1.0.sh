@@ -52,9 +52,9 @@ make install
 ########### #################################################################
 
 mkdir $SRC/openssl && cd $SRC/openssl
-$WGET https://www.openssl.org/source/openssl-1.0.2l.tar.gz
-tar zxvf openssl-1.0.2l.tar.gz
-cd openssl-1.0.2l
+$WGET https://www.openssl.org/source/openssl-1.0.2o.tar.gz
+tar zxvf openssl-1.0.2o.tar.gz
+cd openssl-1.0.2o
 
 CROSS_COMPILE="x86_64-w64-mingw32-" \
 ./Configure mingw64 \
@@ -70,9 +70,9 @@ make install
 ######## ####################################################################
 
 mkdir $SRC/tinc1.0 && cd $SRC/tinc1.0
-$WGET https://www.tinc-vpn.org/packages/tinc-1.0.31.tar.gz
-tar zxvf tinc-1.0.31.tar.gz
-cd tinc-1.0.31
+$WGET https://www.tinc-vpn.org/packages/tinc-1.0.33.tar.gz
+tar zxvf tinc-1.0.33.tar.gz
+cd tinc-1.0.33
 
 LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \
